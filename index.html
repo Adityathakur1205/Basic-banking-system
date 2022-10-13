@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="body">
+    <div class="header_container">
+        <header id="head">
+            <ul id="ul1">                
+                <li id="hid">BASIC BANKING SYSTEM</li>
+                <li id="li_title">BASIC BANKING SYSTEM</li>
+                <li class="litems"><a class="anav" href="home.html">Home</a></li>
+                <li class="litems"><a class="anav" href="customers.php">Customers</a></li>
+                <li class="litems"><a class="anav" href="send.php">Transfer</a></li>
+                <li class="litems"><a class="anav" href="about.html">About</a></li>
+            </ul>
+        </header>
+    </div>
+    <hr>
+    <div class="main">
+        <h1>BANK</h1>
+    </div>
+    <div class="flx">
+        <div class="btn">
+            <button class="button" id="click1"><span>View customers</span></button>
+        </div>
+        <div class="logo">
+            <img id="logo" src="images\banklogo.png" alt="">
+        </div>
+        <div class="btn">
+            <button class="button" id="click2"><span>Money Transfer</span></button>
+        </div>
+    </div>
+    <div class="img">
+        <img id="img" src="images\build.png" alt="bank">
+    </div>
+    <div>
+        <hr>
+    </div>
+    <div class="footer">                 
+       Created by - Aditya Thakur  &copy;  <br>
+       All rights reserved.&reg; 
+    </div>
+
+    <script type="text/javascript">
+        document. getElementById("click1"). onclick = function () {
+        location. href = "customers.php";
+        };
+        document. getElementById("click2"). onclick = function () {
+        location. href = "send.php";
+        };
+        </script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+/*index.html*/
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    color: #6b6e70;
+    min-height: 100%;
+}
+body{
+    margin: 0px;
+    padding-left: 15px;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgb(34, 33, 33),rgb(53, 52, 52));
+}
+.main{
+    text-align: center;
+    font-size: 70px;
+    margin: 0px;
+}
+h1{
+    margin: 0;
+    letter-spacing: 4px;
+}
+div.header_container{
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+}
+
+#ul1{
+    background: #53900f;
+    list-style: nones;
+    padding: 4px;
+    display: inline-block;
+    width: 98%;
+    border-radius: 20px;
+    text-align: center;
+    float: center;
+}
+#hid{
+    display: none;
+}
+li.litems {
+    padding: 4px;
+    display: inline;
+    margin-inline: 35px;
+    float: right;
+    border-radius: 14px;
+}
+#li_title{
+    padding: 4px;
+    display: inline-block;
+    width: 15%;
+    margin-inline: 2.70%;
+    float: left;
+    color: #6b6e70;
+    background-color: #222629;
+    font-weight: 600;
+    border-style: solid;
+    border-radius: 14px;
+    border-width: 0.2%;
+    font-size: 13px;
+    text-align: center;
+    border-color: #1f2605;
+}
+a.anav:link, a.anav:visited{
+    color: rgb(222, 248, 219);
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 20px;
+    transition-duration: 00.35s;
+}
+a.anav:hover{
+    color: #1e1f1f;
+    transition-duration: 0.35s;
+}
+hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #86c232, rgba(0, 0, 0, 0));
+}
+div.flx{
+    display: flex;
+    padding: 15px;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    float: center;
+    justify-content: space-between;
+}
+.btn{
+    padding: 50px;
+    display: flex;
+    width: 33.33%;
+}
+.button {
+    color:#1e1f1f; !important
+    border-radius: 20px;
+    background-color: #4CAF50;
+    text-align: center;
+    border: none;
+    font-size: 28px;
+    padding: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    display: inline;
+    width: 100%;
+  }
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+.button span:after {
+    transition: 0.5s;
+  }
+.button:hover span {
+    color: rgb(196, 255, 204);
+    padding-right: 25px;
+  }
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+.img{
+    text-align: center;
+}
+.logo{
+    display: inline-block;
+    width: 33.33%;
+    padding: 10px;
+}
+#logo{
+    display: inline;
+    height: 95%;
+    width: 50%;
+}
+#img{
+    height: auto;
+    width: 80%;
+}
+
+
+/*about.html*/
+
+.about_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+    text-align: center;
+}
+
+.social-menu {
+	display: flex;
+	list-style-type: none;
+}
+ 
+.social-menu i {
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: 25px;
+	margin-right: 10px;
+	transition: all 0.2s ease-in-out;
+	display: flex;
+	justify-content: center;
+}
+
+.social-menu i:before {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+
+.social-menu a {
+	text-decoration: none;
+}
+
+.fa-facebook {
+	background:#3b5998
+} 
+
+.fa-linkedin {
+	background:#007bb6
+}
+
+.fa-twitter {
+	background:#00aced
+}
+
+.fa-instagram {
+	background:#3f729b
+}
+
+.fa-youtube {
+	background:#c4302b
+}
+
+.social-menu i:hover {
+	opacity: .7;
+	border-radius: 0;
+}
+
+
+
+
+
+
+
+/*media q*/
+@media only screen and (max-width:1100px ){
+    #ul1{
+        padding: 10px;
+    }
+    #li_title{
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 770px){
+    #ul1{
+        padding: 15px;
+    }
+    #logo{
+        width: 64%;
+    }
+    #head{
+        font-size: 11px;
+    }
+    .litems{
+        margin-top: 10px;
+    }
+    .button{
+        font-size: 14px;
+    }
+
+}
+@media only screen and (max-width: 770px){
+    li.litems, #li_title{
+        display: none;
+    }
+    #hid{
+        display: block;
+        text-align: center;
+        font-size: 30px;
+     }
+    #logo{
+        width: 64%;
+    }
+    .logo{
+        text-align: right;
+        padding-right: 22px;
+    }
+    #head{
+        font-size: 11px;
+    }
+    div.btn{
+        padding: 10px;
+    }
+    div.flex{
+        padding: 5px;
+    }
+    .button{
+        font-size: 14px;
+        width: 140%;
+    }
+    #ul1{
+        color: rgb(225, 255, 196);
+    }
+}  
